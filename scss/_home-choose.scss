@@ -1,0 +1,54 @@
+.choose {
+  background-color: #fff;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .section-title {
+  }
+  .choose-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    @media screen and (max-width: 743px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .chose-item a {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .img-price {
+    position: relative;
+    img {
+      height: 226px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      display: block;
+    }
+  }
+  .price {
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Libre Baskerville";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.25;
+    background-color: #fff;
+    border-radius: 16px;
+  }
+  .text {
+    text-align: left;
+  }
+}

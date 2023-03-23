@@ -1,0 +1,20 @@
+.shop-preview {
+  background-image: url(../img/1Home/5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 100px 0;
+  .section-title {
+    color: #fff;
+  }
+  .text {
+    max-width: 328px;
+    margin: 0 auto;
+    color: #fff;
+  }
+}

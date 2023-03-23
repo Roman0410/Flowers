@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="adress">
+            <img src="./img/MapPin.svg" alt="Map Pin" />
+            <a href="">We're your local Tacoma, WA florist</a>
+          </div>
+          <div class="tell">
+            <img src="./img/RingerVolume.svg" alt="Ringer Volume" />
+            <a href="#">+1 505-682-1048</a>
+            <a href="#">+1 505-682-1048</a>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="container">
+          <div class="header-body">
+            <a class="header-logo">
+              <img src="./img/logo.png" alt="logo" />
+            </a>
+
+            <div class="header-right">
+              <nav class="header-nav">
+                <ul class="nav-list">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/contacts.html" class="nav-link">Contacts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/gallery.html" class="nav-link current">Gallery</a>
+                  </li>
+                </ul>
+              </nav>
+              <a href="#" class="cart">
+                <svg class="cart-icon" width="24" height="24">
+                  <use href="./img/symbol-defs.svg#icon-ShoppingBag"></use>
+                </svg>
+                <p class="cart-num">1</p>
+              </a>
+              <button class="shop-btn">Shop <img src="./img/ExpandArrow.svg" alt="arrow" /></button>
+              <div class="header-burger"><span></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="gallery-hero">
+      <div class="container">
+        <div class="left"><img src="./img/3Gallery/1.jpg" alt="" /></div>
+        <div class="right">
+          <h2 class="section-title">GALLERY</h2>
+          <p class="text">Atom is a new kind of cloud-based logging system designed for applications and developers</p>
+          <a href="#" class="btn">Look at the products</a>
+          <div class="follow-us">
+            <p>Follow us</p>
+            <a href="#"><img src="./img/Instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./img/Facebook.svg" alt="Facebook" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-swiper">
+      <div class="container">
+        <h2 class="section-title">Brighten up with our bouquets!</h2>
+        <div class="swiper-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.1.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.2.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.3.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.4.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.1.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.2.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.3.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/3Gallery/2.4.jpg" alt="" />
+                <p class="text">Say it best with our gorgeous flower arrangements - order now for speedy delivery!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-next">Next <img src="./img/RightW.svg" alt="arrow" /></div>
+          <div class="button-prev"><img src="./img/LeftW.svg" alt="arrow" />Back</div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us">
+      <div class="container">
+        <div class="contact-left"><img src="./img/1Home/9.jpg" alt="flowers" /></div>
+        <div class="contact-right">
+          <h2 class="section-title">Сontact form</h2>
+          <p class="text">
+            Surprise your loved ones with our fresh and stunning flower arrangements - order now for same-day delivery!
+          </p>
+          <form class="contactUs2-form" action="" id="mainform" name="contact_form">
+            <input type="text" placeholder="Your name*" name="name" required />
+            <input type="tel" placeholder="Phone number*" name="phone" required />
+            <input type="email" name="email" placeholder="E-mail" />
+            <textarea placeholder="Comment"></textarea>
+
+            <button class="btn" type="submit">Send the form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <h2 class="section-title">Flowers Boutique by Lily</h2>
+          </div>
+          <ul class="footer-contacts">
+            <li class="breadcrumbs"></li>
+            <li>Phone <a href="tel:">+44 1632 960650</a></li>
+            <li>Email <a href="mailto:">hello@flowershop.com</a></li>
+            <li>Adress <a href="#">27 Ellis Avenue, Leicester England</a></li>
+          </ul>
+          <ul class="footer-nav">
+            <li class="footer-nav-item"><a href="">Payments methods</a></li>
+            <li class="footer-nav-item"><a href="">Basket</a></li>
+            <li class="footer-nav-item"><a href="">Delivery</a></li>
+          </ul>
+          <div class="follow-us">
+            <p>Follow us</p>
+            <a href="#"><img src="./img/Instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="./img/Facebook.svg" alt="Facebook" /></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14873432.795030175!2d-119.67094578837808!3d42.14951520767668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485e5ffe7c3b0f9%3A0x944278686c5ff3ba!2z0JLQsNGI0LjQvdCz0YLQvtC9LCDQodC_0L7Qu9GD0YfQtdC90ZYg0KjRgtCw0YLQuCDQkNC80LXRgNC40LrQuA!5e0!3m2!1suk!2sua!4v1679521217414!5m2!1suk!2sua"
+            width="100%"
+            height="267px"
+            style="border: 0; border-radius: 16px"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/sliders.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

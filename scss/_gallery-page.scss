@@ -1,0 +1,85 @@
+.gallery-hero {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @media screen and (max-width: 660px) {
+      flex-direction: column;
+    }
+
+    .left {
+      width: 60%;
+      img {
+        width: 100%;
+        height: 268px;
+        object-fit: cover;
+        border-radius: 16px;
+      }
+      @media screen and (max-width: 660px) {
+        order: 2;
+        width: 100%;
+      }
+    }
+    .right {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: center;
+      @media screen and (max-width: 660px) {
+        width: 100%;
+      }
+      .section-title {
+      }
+      .text {
+        align-items: center;
+        max-width: 328px;
+      }
+      .btn {
+      }
+      .follow-us {
+        color: #000;
+        display: flex;
+        gap: 6px;
+      }
+    }
+  }
+}
+.gallery-swiper {
+  .container {
+  }
+  .section-title {
+    margin-bottom: 25px;
+  }
+  .swiper-container {
+    position: relative;
+    padding-bottom: 55px;
+  }
+  .swiper {
+  }
+  .swiper-wrapper {
+  }
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    img {
+      width: 100%;
+      height: 304px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+    .text {
+      background-color: #fff;
+      padding: 16px;
+      border-radius: 16px;
+    }
+  }
+
+  .button-next,
+  .button-prev {
+    background-color: #000;
+    color: #fff;
+  }
+}
