@@ -1,0 +1,127 @@
+.cart {
+  display: block;
+  .section-title {
+    margin-bottom: 25px;
+  }
+  .container {
+    display: flex;
+    gap: 16px;
+    @media screen and (max-width: 744px) {
+      flex-direction: column;
+    }
+  }
+  .cart-goods {
+    width: 50%;
+    border-right: 1px solid rgb(190, 190, 190);
+    @media screen and (max-width: 744px) {
+      width: 100%;
+      border: none;
+    }
+  }
+  .cart-goods-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .cart-goods-item {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c2c2c2;
+    width: 95%;
+    @media screen and (max-width: 744px) {
+      width: 100%;
+    }
+    img.good-img {
+      width: 172px;
+      height: 172px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+  }
+  .goods-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+    .product-name {
+    }
+    .text {
+    }
+    .prod-description {
+      text-align: left;
+    }
+    .quantity {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .amount {
+        color: black;
+      }
+      img {
+        margin-top: -2px;
+      }
+    }
+
+    .plus {
+    }
+    .minus {
+    }
+    .subtotal {
+      color: #000;
+      span {
+        color: #6c6c6c;
+      }
+    }
+    .remove {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      img {
+        margin-top: -3px;
+      }
+    }
+  }
+
+  .cart-total {
+    width: 50%;
+    @media screen and (max-width: 744px) {
+      width: 100%;
+      border: none;
+    }
+    .total-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #d0d0d0;
+    }
+    .total-item {
+      .subtotal {
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #6c6c6c;
+        }
+        span {
+          display: block;
+        }
+      }
+    }
+    .total-sum {
+      margin-top: 25px;
+      .subtotal {
+        p {
+          color: #6c6c6c;
+        }
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .btn {
+    margin-top: 25px;
+    max-width: 150px;
+  }
+}

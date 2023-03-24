@@ -19,6 +19,10 @@ $(document).ready(function () {
     $(this).closest("li").find(".answer").toggleClass("open");
     $(this).closest("li").find("img").toggleClass("open");
   });
+  $(".description-top").click(function (event) {
+    $(".description-body").toggleClass("open");
+    $(".description-top").find("img").toggleClass("open");
+  });
 });
 
 // const filterSlide = document.querySelectorAll(".swiper-slide");

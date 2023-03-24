@@ -48,7 +48,9 @@ h3 {
   font-family: "Libre Baskerville", serif;
   cursor: default;
 }
-
+img {
+  display: block;
+}
 button {
   border: 0;
   padding: 0;
@@ -138,5 +140,121 @@ button {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+  .btn {
+    margin: 0;
+    padding: 10px 20px;
+    img {
+      display: block;
+    }
+  }
+  .pagination-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    p {
+      line-height: 0;
+      margin-top: 1px;
+    }
+  }
+  .curent-page {
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.goods-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.product-card {
+  width: calc((100% - 64px) / 5);
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    width: calc((100% - 48px) / 4);
+  }
+  @media screen and (max-width: 800px) {
+    width: calc((100% - 32px) / 3);
+  }
+  @media screen and (max-width: 600px) {
+    width: calc((100% - 16px) / 2);
+  }
+  &:hover,
+  &:focus {
+    background-color: #fff5eb;
+    margin-bottom: -60px;
+    box-shadow: 0px 1px 16px 5px rgba(0, 0, 0, 0.233);
+    z-index: 1;
+    border-radius: 16px;
+    .btn-hidden {
+      display: block;
+    }
+  }
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    img {
+      width: 100%;
+      height: 225px;
+      object-fit: cover;
+      border-radius: 16px 16px 0 0;
+      display: block;
+    }
+
+    .prod-info {
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .product-name {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      color: #000000;
+    }
+    .text {
+      text-align: left;
+    }
+    .prod-description {
+    }
+    .product-price {
+      color: #6c6c6c;
+      display: flex;
+      gap: 10px;
+      span {
+        display: block;
+        color: #000;
+      }
+    }
+    .btn-hidden {
+      display: none;
+      width: 100%;
+      z-index: 1;
+      position: absolute;
+      bottom: 14px;
+    }
+    .product-btn {
+      margin: 0 auto;
+      display: block !important;
+      width: 70%;
+      text-align: center;
+    }
   }
 }
